@@ -14,7 +14,6 @@ pipeline {
         registryCredential = '22f4111c-e2f8-4a38-9ad7-852a47fa8048'
         dockerImage = ''
     }
-
     stages {
         stage('Clone my Branch from Git') {
             steps {
