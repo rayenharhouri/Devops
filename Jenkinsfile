@@ -35,7 +35,6 @@ pipeline {
                 }
             }
         }
-
         stage('SonarQube Analysis') {
             steps {
                 dir(REPO_DIR) {
