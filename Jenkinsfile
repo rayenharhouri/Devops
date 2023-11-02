@@ -35,6 +35,13 @@ pipeline {
                 }
             }
         }
+        stage('JUnit Tests') {
+                    steps {
+                        dir(REPO_DIR) {
+                            sh 'mvn test'
+                        }
+                    }
+                }
         stage('SonarQube Analysis') {
             steps {
                 dir(REPO_DIR) {
